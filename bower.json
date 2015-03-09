@@ -1,0 +1,22 @@
+{
+  "name": "EveryBill",
+  "version": "0.0.1",
+  "authors": [
+    "Satyajit Sahoo <satyajit.happy@gmail.com>"
+  ],
+  "description": "Landing page for EveryBill",
+  "license": "GPL",
+  "main": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "gulpfile.js"
+  ],
+  "dependencies": {
+    "jquery": "1",
+    "velocity": "~1.2.1",
+    "lace": "~0.1.6"
+  }
+}

@@ -1,0 +1,59 @@
+@import "settings";
+
+@import "../../bower_components/lace/src/scss/base";
+@import "../../bower_components/lace/src/scss/button";
+@import "../../bower_components/lace/src/scss/entry";
+@import "../../bower_components/lace/src/scss/grid";
+
+
+// Initialize the grid
+@include grid($block-size: 10em, $columns: 12, $gutter: 1.5em);
+
+
+// Base styles
+html, body { height: 100%; }
+
+.cover {
+    display: table;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    background-image: linear-gradient(to bottom, rgba(33, 33, 33, .7), rgba(33, 33, 33, .7)), url("../../assets/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $light-color;
+
+    &-content {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    &-title {
+        font-size: 3em;
+        font-weight: 300;
+    }
+
+    &-action {
+        margin: 3em 0;
+
+        a { border: 0; }
+
+        &-playstore {
+            img {
+                @extend %transition;
+
+                border-radius: 8px;
+
+                &:focus, &:hover { background-color: rgba(255,255,255,.2); }
+
+                &:active { background-color: rgba(255,255,255,.3); }
+            }
+        }
+    }
+}
+
+.page-content {
+    padding: 2em 1em;
+    max-width: 50em;
+    margin: auto;
+}
