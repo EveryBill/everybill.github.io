@@ -50,6 +50,20 @@ html, body { height: 100%; }
             }
         }
     }
+
+    &-links {
+        list-style: none;
+
+        a {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+            &, &:focus, &:hover, &:active { color: currentColor; }
+
+            &:focus, &:hover { border-bottom-color: rgba(255, 255, 255, 0.7); }
+
+            &:active { border-bottom-color: rgba(255, 255, 255, 0.9); }
+        }
+    }
 }
 
 .page-content {
