@@ -1,0 +1,545 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+@import url(https://fonts.googleapis.com/css?family=Signika:400,300);
+body {
+  //padding-bottom: 40px;
+  background-color:#fefefe;
+  font-family: 'Signika', sans-serif;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+.navbar-wrapper .navbar {
+   background-color: transparent !important;
+   background: transparent !important;
+   border-color: transparent !important;
+}
+
+.navbar-wrapper .navbar li a{ 
+	color: #fff; 
+}
+.navbar-wrapper i {
+    background: #FEC900;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.navbar-wrapper i:hover {
+    background: #6D9F2E;
+    color: #ffffff;
+}
+.navbar-toggle {
+	margin-top:18px !important;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+	background:#7CB93A;
+}
+.navbar-inverse .navbar-toggle{
+	border:1px solid #FFCA00;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 694px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  	z-index: 10;
+	right: 50%;
+	left: 9%;
+	top: 38%;
+	padding-bottom: 30px;
+	text-align: left;
+	
+}
+.carousel-caption p{
+	font-size:24px !important;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 694px;
+}
+.carousel-inner{
+	background:#7CB93A;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+}
+.google-play a img{
+	border: 2px solid #fff;
+	border-radius: 6px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.google-play a img:hover{
+	border: 2px solid #FFCA00;
+	border-radius: 6px;
+	background:#7cb83a;
+}
+@media screen and (min-width : 320px) and (max-width : 480px){
+.carousel-inner{
+	background:#7CB93A;
+}
+.carousel-caption {
+    z-index: 10;
+    right: 0%;
+    left: 0%;
+    top: 30%;
+    padding-bottom: 0px;
+    text-align: center;
+}
+.reason {
+    padding-left: 50px;
+    top: -97px;
+    right: 0px !important;
+}
+.pricing-section h3{
+	font-size:30px !important;
+}
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+/*bottom section*/
+.second-section{
+	padding-top:50px;
+}
+.reason{
+	font-size: 43px;
+    color: #999999;
+    border-top: 4px solid #7cb93b;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    right: 116px;
+    padding-left: 50px;
+}
+.reason_span{
+	font-size: 50px;
+	color: #333333;
+	font-weight: 100;
+	transform: rotate(270deg);
+	transform-origin: bottom;
+	float: left;
+	padding-top: 25px;
+	text-transform: uppercase;
+	padding-right: 0px;
+}
+.feature-intro{
+	color:#7cb93b;
+}
+.features{
+	color:#333333;
+	font-size:24px;
+	padding-left:100px;
+	padding-top:35px;
+}
+.features li{
+	list-style-type: none;
+	counter-increment: li;
+	position: relative;
+	line-height: 34px;
+	padding-bottom: 35px;
+}
+.features li:before{
+    content: counter(li);
+    position: absolute;
+    left: -80px;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    text-align: center;
+    color: #7cb93b;
+    background: #e5f1d8;
+    font-size: 24px;
+    line-height: 72px;
+}
+
+/*============================================================
+Pricing Table
+============================================================*/
+.pricing-section{
+	background:#666666;
+}
+.pricing-section h3{
+	text-align:center;
+	font-size:42px;
+	padding:10px 0;
+	color:#ffffff;
+}
+.pricing-section h4{
+	text-align:center;
+	//font-size:42px;
+	padding:10px 0;
+	color:#ffffff;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    border: 1px solid #FFCB00;
+    border-radius: 5px;
+}
+.table-odd{
+	background:#ffcb00 !important;
+}
+.table-two{
+	background:#7cb93b !important;
+}
+.table-three{
+	background:#ff9900 !important;
+}
+.db-bk-color-one {
+    background-color: #ffffff;
+}
+
+.db-bk-color-two {
+    background-color: #ffffff;
+}
+
+.db-bk-color-three {
+    background-color: #47887E;
+}
+
+.db-bk-color-six {
+    background-color: #F59B24;
+}
+/*============================================================
+PRICING STYLES
+==========================================================*/
+.db-padding-btm {
+    padding-bottom: 50px;
+}
+.db-button-color-square {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.50);
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	font-size: 24px;
+	padding: 10px 10px;
+	display: block;
+}
+
+    .db-button-color-square:hover {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.50);
+        border: none;
+    }
+
+
+.db-pricing-eleven {
+    margin-bottom: 30px;
+    margin-top: 50px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    color: #fff;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+    .db-pricing-eleven ul {
+		list-style: none;
+		margin: 0;
+		text-align: left;
+		padding: 20px;
+    }
+
+        .db-pricing-eleven ul li {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            cursor: pointer;
+			color:#656565;
+			border-bottom:1px solid #dcdcdc;
+			font-size: 18px;
+			text-align:center;
+        }
+		.db-pricing-eleven ul li:last-child {
+			border-bottom:none;
+        }
+
+            .db-pricing-eleven ul li i {
+                margin-right: 5px;
+            }
+			.db-pricing-eleven ul li span {
+				//text-align:right;
+				//float:right;
+            }
+
+
+    .db-pricing-eleven .price {
+        padding: 20px 20px 20px 20px;
+        font-size: 42px;
+        font-weight: 400;
+        color: #FFFFFF;
+		border-radius: 5px 5px 0px 0px;
+    }
+
+        .db-pricing-eleven .price small {
+            color: #ffffff;
+            display: block;
+            font-size: 24px;
+            margin-top: 5px;
+        }
+
+    .db-pricing-eleven .type {
+        background-color: #52E89E;
+        padding: 50px 20px;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+
+    .db-pricing-eleven .pricing-footer {
+        padding: 20px;
+    }
+
+.db-pricing-eleven.popular {
+    margin-top: 10px;
+}
+
+    .db-pricing-eleven.popular .price {
+            padding-top: 55px;
+    }
+.shadow{
+	height:55px;
+	background:url(../images/shadow.png) center no-repeat;
+	background-size:contain;
+}
+/*our team styling*/
+.team{
+    padding:75px 0;
+}
+.team-block-left{
+}
+h6.description{
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #999;
+	border-bottom: 1px solid rgba(0, 0, 0,0.1);
+	padding-bottom: 5px;
+}
+.profile{
+	margin-top: 25px;
+}
+.profile h4{
+	font-weight: bold;
+	font-size: 20px;
+	margin: 10px 0 0 0;
+	color: #333333;
+	text-transform: uppercase;
+	text-align: center;
+}
+.profile p{
+	font-size: 18px;
+	font-weight: lighter;
+	margin-top: 5px;
+	color:#666666;
+	text-align:center;
+}
+.profile .img-box{
+	opacity: 1;
+	display: block;
+	position: relative;
+}
+.profile .img-box:after{
+	content:"";
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+.img-box img{
+	width:100% !important;
+}
+.img-box ul{
+	position: absolute;
+	z-index: 2;
+	bottom: 50px;
+	text-align: center;
+	width: 100%;
+	padding-left: 0px;
+	height: 0px;
+	margin:0px;
+	opacity: 0;
+}
+.profile .img-box:after, .img-box ul, .img-box ul li{
+	-webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+.img-box ul i{
+	font-size: 20px;
+	letter-spacing: 10px;
+}
+.img-box ul li{
+	width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #88C425;
+    margin: 2px;
+    padding: 5px;
+	display: inline-block;
+}
+.img-box a{
+	color:#fff;
+}
+.img-box:hover:after{
+	opacity: 1;
+}
+.img-box:hover ul{
+	opacity: 1;
+}
+.img-box ul a{
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+.img-box a:hover li{
+	border-color: #fff;
+	color: #88C425;
+}
+a{
+    color:#88C425;
+}
+a:hover{
+    text-decoration:none;
+    color:#519548;
+}
+.contact_header{
+	color:#7cb93b;
+	font-size:28px;
+}
+.contact_desc{
+	font-size:24px;
+	color:#333333;
+}
+/*footer*/
+.footer{
+	background:#333333;
+	color:#ffffff;
+	margin-top:50px;
+}
+.footer a{
+	color:#ffffff;
+}
+.footer a:hover{
+	color:#88C425;
+}
+.footer p{
+	text-align:center;
+	padding:15px 0px 10px 0;
+}
