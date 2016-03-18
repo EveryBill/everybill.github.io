@@ -292,6 +292,10 @@ Pricing Table
 .table-odd{
 	background:#ffcb00 !important;
 }
+
+.table-discount{
+	background:#F44336 !important;
+}
 .table-two{
 	background:#7cb93b !important;
 }
